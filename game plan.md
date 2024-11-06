@@ -89,3 +89,36 @@ The game in no way encourages or talks about anything to do with mental well-bei
 **Cultural Sensativities**
 
 The game in no way has anything to do with race or culture. 
+
+## **Researching and Implementing**
+
+### **PMI Table**
+
+### **Pseudocode and Flow Chart**
+
+![](userinteractions.png)
+
+
+BEGIN UserInteraction  
+&nbsp;&nbsp;WHILE "Scouting"  
+&nbsp;&nbsp;&nbsp;&nbsp; IF "W Pressed" THEN  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  DISPLAY "Move Camera Upwards"  
+&nbsp;&nbsp;&nbsp;&nbsp; ELSE IF "A Pressed" THEN  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  DISPLAY "Move Camera Leftwards"  
+&nbsp;&nbsp;&nbsp;&nbsp; ELSE IF "S Pressed" THEN  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  DISPLAY "Move Camera Downwards"  
+&nbsp;&nbsp;&nbsp;&nbsp; ELSE IF "D Pressed" THEN  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  DISPLAY "Move Camera Rightwards"  
+&nbsp;&nbsp;&nbsp;&nbsp; END IF  
+&nbsp;&nbsp;END WHILE  
+&nbsp;&nbsp;WHILE "Aiming"  
+&nbsp;&nbsp;&nbsp;&nbsp; INPUT PulledBackAmount  
+&nbsp;&nbsp;&nbsp;&nbsp; DISPLAY DistanceTravelled  
+&nbsp;&nbsp;END WHILE  
+
+&nbsp;&nbsp;WHILE "Game Start"  
+&nbsp;&nbsp;&nbsp;&nbsp; IF "Space Pressed" THEN  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  DISPLAY "Jump"  
+&nbsp;&nbsp;&nbsp;&nbsp; END IF  
+&nbsp;&nbsp;END WHILE  
+END UserInteraction
