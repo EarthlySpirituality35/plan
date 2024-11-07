@@ -169,3 +169,28 @@ FUNCTION Main
 &nbsp; END LOOP  
 END FUNCTION  
 
+## **Gantt Chart**
+
+![Gantt](ganttchart.png)
+
+## **Simulation Storyboard**
+
+### **Game Menu**
+
+![Menu](menu.png)
+
+### **Level Selection**
+
+![Levels](levels.png)
+
+### **Level 1**
+
+![Level1](levelone.png)
+
+### **Level Completion**
+
+![LevelCompletion](done.png)
+
+## **Gameplay Storyboard**
+
+![storyboard](storyboard.png)
