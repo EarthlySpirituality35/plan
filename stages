@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="eric.ou1"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-11-07 10:02:53 AM"/>
+        <attribute name="created" value="ZXJpYy5vdTE7IDA0Q0Y0QkIyQ0ZBRlA7IDIwMjQtMTEtMDc7IDA5OjM4OjU3IEFNOyAyOTM5"/>
+        <attribute name="edited" value="ZXJpYy5vdTE7IDA0Q0Y0QkIyQ0ZBRlA7IDIwMjQtMTEtMDc7IDEwOjAyOjUzIEFNOyAyOTE4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <input variable="Swings"/>
+            <output expression="Par"/>
+            <while expression="&quot;Ball not in hole&quot;">
+                <if expression="Swings &lt; Par">
+                    <then>
+                        <output expression="&quot;3 Stars&quot;"/>
+                    </then>
+                    <else>
+                        <if expression="Swings == Par">
+                            <then>
+                                <output expression="&quot;2 Stars&quot;"/>
+                            </then>
+                            <else>
+                                <output expression="&quot;1 Star&quot;"/>
+                            </else>
+                        </if>
+                    </else>
+                </if>
+                <output expression="&quot;Sound Effect&quot;"/>
+            </while>
+            <input variable="UserOption"/>
+            <output expression="&quot;Home&quot;"/>
+            <output expression="&quot;Retry&quot;"/>
+            <output expression="&quot;Next Stage&quot;"/>
+            <while expression="UserOption">
+                <if expression="UserOption == Home">
+                    <then>
+                        <output expression="&quot;Splash Screen&quot;"/>
+                    </then>
+                    <else>
+                        <if expression="UserOption == Retry">
+                            <then>
+                                <output expression="&quot;Go back to same level&quot;"/>
+                            </then>
+                            <else>
+                                <if expression="&quot;UserOption == Next Level&quot;">
+                                    <then>
+                                        <output expression="&quot;Go onto the next stage&quot;"/>
+                                    </then>
+                                    <else>
+                                        <output expression="&quot;Please choose an option&quot;"/>
+                                    </else>
+                                </if>
+                            </else>
+                        </if>
+                    </else>
+                </if>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
