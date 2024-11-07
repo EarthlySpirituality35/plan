@@ -72,20 +72,99 @@ Accessibility: accessibility is all about whether everyone has the ability to pl
 
 **Accessability**
 
-Everyone on a computer should have access to this game. It should be able to be globally used by everyone.
+Accessability is an important part of video creation and by making it so that games are accessible to everyone, it makes it so that the game has a wider reach. My game would allow for a large number of people to be able to play it as it realistically only requires one hand to play and doesn't require wifi
 
 **Privacy and Data Protection**
 
-It should not take any other information except the scores and levels that the user has completed.
+All games take personal data of the user to enhance the gameplay of users and my game, in order to make it better, takes the level data of the user and saves it so that when the player restarts the application, it saves. 
 
 **Fairness and Representation**
 
-There will be no negative representations within my game as there are no people/races, rather just being a white golf ball.
+Games are often played by young individuals and have a strong influence on their thoughts, making it important to display the game without any negative representation. My game incorporates a non-competitive game with no negative representation. My game will be fair and shots with the same shot type will be resulted with the same result.
 
 **Mental and Emotional Well-Being**
 
-The game in no way encourages or talks about anything to do with mental well-being. 
+Mental and emotional well-being are vulnerable topics and are best to avoid when making a game. Overly competitive games may foster emotional and mental stress. My game doesn't incorporate anythibg to do with mental and emotional well-being with no competitive elements.
 
 **Cultural Sensativities**
 
-The game in no way has anything to do with race or culture. 
+Cultural sensativities will be avoided when creating the game as it can be seen as valuing one culture over another. Globally, there are people with diverse backgrounds and by being mindful of different cultures, it makes others feel less alienated. With that being said, my game will avoid including anything that may be seen as culturally offensive.
+
+## **Researching and Implementing**
+
+### **PMI Table**
+
+| **Existing Game** | **Plus** | **Minus** | **Implication** |
+| ---- | ---- | ---- | ---- |
+| ![Golf Battle](https://play-lh.googleusercontent.com/xazxEnaT23cc84PGcB9NGaOOOXxuuMs_DXKQExwi0OB-GXLTTQuZUOQKO0sL2-CFCg=w526-h296-rw) **Golf Battle** | The game is extremely similar to what I am creating, except golf battle is multiplayer while mine relies more on levels and completion. It is extremely fast paced and is fun to play with friends. It utilises the power control, precision and strategic ideas used within my game. | Although it is multiplayer, it is too fast paced and being multiplayer, would require wifi or an internet connection to run. It may also be difficult to begin playing with how fast paced the game is. | I have taken some aspects and features from this game such as the aiming feature, power control and the strategy used within the game. It will be a less competitive version, making it more user-friendly. |
+| ![Angry Birds](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2EEm4Gp8HMy2XGOIua4J4s1bPmJXrn1qnVA&s) **Angry Birds** | Angry birds is a game with a similar concept except being 2D, throwing birds into buildings. It utilises a similar pull-back for power feature and strategy due to the lining up to measure the correct trajectory to throw the bird. | Although angry birds requires precision and aiming, it focuses less on direct precision and more on aiming at large targets to knock down buildings, making it different to a golf game which requires both in order to win. | In order to make the game more interesting, the game will take the precision from angry birds and the power feature.
+| ![Mario Golf](https://www.cnet.com/a/img/resize/a583cef1aedd98852aed4ac2c50683a013a4c2b8/hub/2021/06/23/97d9f861-47ee-43c8-afc4-a4d6ec877736/mario-golf-mii-4.jpg?auto=webp&fit=crop&height=675&width=1200) **Mario Golf** | Mario golf is a golf type game using the characters from Mario and it, similar to golf battle has precision and power features but the best thing about mario golf is how easy the game is to play and understand. It is single and multiplayer, making it more accessible. | Mario golf may also be difficult to understand due to the different types of shots. This would make it so that it would have a steep learning curve which can be both good or bad but in a game with levels, it would make it difficult to progress. | Mario golf is a good game with a simple concept and I would take, similar to all the games on the list, the precision and power features however, making the game easy to understand and play is also an important feature to possess.
+
+
+### **Pseudocode and Flow Chart**
+
+**User Interactions**
+
+![](userinteractions.png)
+
+
+BEGIN UserInteraction  
+&nbsp;&nbsp;WHILE "Scouting"  
+&nbsp;&nbsp;&nbsp;&nbsp; IF "W Pressed" THEN  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  DISPLAY "Move Camera Upwards"  
+&nbsp;&nbsp;&nbsp;&nbsp; ELSE IF "A Pressed" THEN  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  DISPLAY "Move Camera Leftwards"  
+&nbsp;&nbsp;&nbsp;&nbsp; ELSE IF "S Pressed" THEN  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  DISPLAY "Move Camera Downwards"  
+&nbsp;&nbsp;&nbsp;&nbsp; ELSE IF "D Pressed" THEN  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  DISPLAY "Move Camera Rightwards"  
+&nbsp;&nbsp;&nbsp;&nbsp; END IF  
+&nbsp;&nbsp;END WHILE  
+&nbsp;&nbsp;WHILE "Aiming"  
+&nbsp;&nbsp;&nbsp;&nbsp; INPUT PulledBackAmount  
+&nbsp;&nbsp;&nbsp;&nbsp; DISPLAY DistanceTravelled  
+&nbsp;&nbsp;END WHILE  
+
+&nbsp;&nbsp;WHILE "Game Start"  
+&nbsp;&nbsp;&nbsp;&nbsp; IF "Space Pressed" THEN  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  DISPLAY "Jump"  
+&nbsp;&nbsp;&nbsp;&nbsp; END IF  
+&nbsp;&nbsp;END WHILE  
+END UserInteraction
+
+**Stages**
+
+![stages](stages.png)
+
+FUNCTION Main   
+&nbsp; INPUT Swings  
+&nbsp; OUTPUT Par   
+
+&nbsp; LOOP WHILE "Ball not in hole"   
+&nbsp; &nbsp; IF Swings < Par THEN   
+&nbsp; &nbsp; &nbsp; OUTPUT "3 Stars"   
+&nbsp; &nbsp; ELSE IF Swings = Par THEN  
+&nbsp; &nbsp; &nbsp; OUTPUT "2 Stars"  
+&nbsp; &nbsp; ELSE  
+&nbsp; &nbsp; &nbsp; OUTPUT "1 Star"   
+&nbsp; &nbsp; END IF  
+&nbsp; &nbsp; OUTPUT "Sound Effect"  
+&nbsp; END LOOP  
+
+&nbsp; INPUT UserOption  
+&nbsp; OUTPUT "Home"  
+&nbsp; OUTPUT "Retry"  
+&nbsp; OUTPUT "Next Stage"  
+
+&nbsp; LOOP WHILE UserOption  
+&nbsp; &nbsp; IF UserOption = Home THEN  
+&nbsp; &nbsp; &nbsp; OUTPUT "Splash Screen"  
+&nbsp; &nbsp; ELSE IF UserOption = Retry THEN  
+&nbsp; &nbsp; &nbsp; OUTPUT "Go back to same level"  
+&nbsp; &nbsp; ELSE IF UserOption = Next Stage THEN  
+&nbsp; &nbsp; &nbsp; OUTPUT "Go onto the next stage"  
+&nbsp; &nbsp; ELSE  
+&nbsp; &nbsp; &nbsp; OUTPUT "Please choose an option"  
+&nbsp; &nbsp; END IF  
+&nbsp; END LOOP  
+END FUNCTION  

@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="eric.ou1"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-11-06 11:50:56 AM"/>
+        <attribute name="created" value="ZXJpYy5vdTE7IDA0Q0Y0QkIyQ0ZBRlA7IDIwMjQtMTEtMDY7IDExOjIzOjU5IEFNOyAyOTI3"/>
+        <attribute name="edited" value="ZXJpYy5vdTE7IDA0Q0Y0QkIyQ0ZBRlA7IDIwMjQtMTEtMDY7IDExOjUwOjU2IEFNOyAyOTI0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <while expression="&quot;Scouting&quot;">
+                <if expression="&quot;W Pressed&quot;">
+                    <then>
+                        <output expression="&quot;Move Camera Upwards&quot;"/>
+                    </then>
+                    <else>
+                        <if expression="&quot;A Pressed&quot;">
+                            <then>
+                                <output expression="&quot;Move Camera Leftwards&quot;"/>
+                            </then>
+                            <else>
+                                <if expression="&quot;S Pressed&quot;">
+                                    <then>
+                                        <output expression="&quot;Move Camera Downwards&quot;"/>
+                                    </then>
+                                    <else>
+                                        <if expression="&quot;D Pressed&quot;">
+                                            <then>
+                                                <output expression="&quot;Move Camera Rightwards&quot;"/>
+                                            </then>
+                                            <else/>
+                                        </if>
+                                    </else>
+                                </if>
+                            </else>
+                        </if>
+                    </else>
+                </if>
+            </while>
+            <while expression="&quot;Aiming&quot;">
+                <input variable="PulledBackAmount"/>
+                <output expression="DistanceTravelled"/>
+            </while>
+            <while expression="&quot;Game Start&quot;">
+                <if expression="&quot;Space Pressed&quot;">
+                    <then>
+                        <output expression="&quot;Jump&quot;"/>
+                    </then>
+                    <else/>
+                </if>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
